@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Программа обучения от Artur Kmitas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Load Orbitron for cyberpunk headings and Share Tech Mono for the body text -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+<style>
+    body {
+        margin: 0;
+        /* Use Share Tech Mono for a more cyberpunk feel */
+        font-family: 'Share Tech Mono', monospace;
+        color: #e0f7fa;
+        line-height: 1.6;
+        background-color: #0d0d2b;
+    }
+    .hero {
+        background: radial-gradient(circle at center, #2c2f55 0%, #0d0d2b 100%);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Dark overlay for the hero background */
+        background-color: rgba(13, 13, 43, 0.7);
+    }
+    .hero .overlay {
+        position: relative;
+        z-index: 1;
+        padding: 0 20px;
+        color: #e0f7fa;
+    }
+    .hero h1 {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 3em;
+        margin-bottom: 0.2em;
+    }
+    .hero p {
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    header, section {
+        padding: 60px 20px;
+    }
+    section h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2em;
+    }
+    #for-whom ul, #goals ul {
+        list-style: none;
+        padding: 0;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #for-whom ul li, #goals ul li {
+        padding-left: 30px;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    #for-whom ul li::before, #goals ul li::before {
+        content: '058'; /* FontAwesome check icon */
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: #00ffff;
+    }
+    .modules {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .module-card {
+        background: #151e3d;
+        border-radius: 8px;
+        /* Neon glow effect */
+        box-shadow: 0 0 10px rgba(0,255,255,0.4), 0 0 20px rgba(139,0,255,0.3);
+        border: 1px solid #00ffff;
+        padding: 20px;
+        max-width: 350px;
+        flex: 1 1 280px;
+    }
+    .module-card h3 {
+        margin-top: 0;
+        color: #00ffff;
+        font-family: 'Orbitron', sans-serif;
+    }
+    .module-card ul {
+        list-style: disc;
+        margin-left: 20px;
+        color: #e0f7fa;
+    }
+    .cta-section {
+        background: #8b00ff;
+        color: #e0f7fa;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .cta-section a {
+        background: #00ffff;
+        color: #0d0d2b;
+        padding: 15px 30px;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: background 0.3s;
+    }
+    .cta-section a:hover {
+        background: #00bfbf;
+    }
+    footer {
+        background: #02020c;
+        color: #888;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9em;
+    }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="overlay">
+    <h1>Программа обучения<br>от Artur Kmitas</h1>
+    <p>Ваш путь в мир безопасных и доходных инвестиций в криптовалюту</p>
+  </div>
+</header>
+<section id="for-whom">
+  <h2>Для кого подходит обучение</h2>
+  <ul>
+    <li>Начинающих, которые только знакомятся с криптовалютой и DeFi</li>
+    <li>Тех, кто хочет сформировать криптопортфель и получать стабильный доход</li>
+    <li>Тех, кто боится потерять деньги и нуждается в защите средств</li>
+    <li>Тех, кто хочет системности и пошаговой поддержки без хаоса</li>
+  </ul>
+</section>
+<section id="program">
+  <h2>Программа обучения</h2>
+  <div class="modules">
+    <div class="module-card">
+      <h3>Блок 1. Основы криптовалют</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Крипта и блокчейн простыми словами, без лишней теории</li>
+        <li>Зачем нужен биткоин и чем он сильнее альтов</li>
+        <li>Где покупать криптовалюту: CEX против DeFi</li>
+        <li>BTC, альткоины и стейблы — в чём разница</li>
+        <li>Биржи, кошельки и холодное хранение</li>
+        <li>Практика: настройка кошелька + первые шаги безопасности</li>
+        <li>Главные риски и как их обойти</li>
+      </ul>
+      <p><strong>Результат:</strong> умеешь купить, хранить и защитить крипту так, чтобы не потерять доступ и деньги.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 2. Способы заработка на криптовалюте</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Алгоритм: от покупки → к прибыли</li>
+        <li>Рабочие методы: стейкинг, DeFi, фарминг, NFT, GameFi, арбитраж, трейдинг</li>
+        <li>Что реально работает для старта и даёт доход без лишних рисков</li>
+        <li>Практика: первые пулы на стейблах</li>
+        <li>Как считать риски в каждой стратегии</li>
+      </ul>
+      <p><strong>Результат:</strong> видишь карту вариантов заработка и понимаешь, с чего начать именно тебе.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 3. Практика с биржами и DeFi</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Регистрация и настройка аккаунта на бирже</li>
+        <li>Интерфейс: где покупать, хранить и переводить</li>
+        <li>Первая покупка (пример: USDT → BTC)</li>
+        <li>Как выбрать биржу и не попасть на проблемную</li>
+        <li>Практика: купить, обменять, вывести</li>
+        <li>Подключение кошелька к DeFi и первая сделка</li>
+        <li>Первый пул на минимальной сумме</li>
+      </ul>
+      <p><strong>Результат:</strong> у тебя есть кошелёк, крипта и первый опыт работы в DeFi.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 4. Портфель для DeFi</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Как собрать устойчивый портфель под разные цели</li>
+        <li>Почему портфель = твоя защита и доход</li>
+        <li>DCA‑стратегия: как работает и зачем</li>
+        <li>Какие активы брать, а какие обходить</li>
+        <li>Когда фиксировать прибыль</li>
+        <li>Основные ошибки новичков при портфеле</li>
+        <li>Моя рабочая схема портфеля</li>
+      </ul>
+      <p><strong>Результат:</strong> у тебя есть портфель и стратегия работы с ним.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 5. Безопасность в DeFi</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Мини‑аудит протоколов перед входом</li>
+        <li>Какие проекты обходить стороной</li>
+        <li>Подписи и транзакции: что проверять всегда</li>
+        <li>Как отменять опасные транзакции</li>
+        <li>Схемы скама и как их распознать</li>
+        <li>Почему даже аппаратный кошелёк не даёт 100%</li>
+        <li>Деление кошельков под разные задачи</li>
+        <li>Ошибки, которые стоят денег</li>
+      </ul>
+      <p><strong>Результат:</strong> умеешь выявлять скам и защищать активы.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 6. Работа с сетями</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Кошельки для разных сетей</li>
+        <li>Как переводить активы между сетями</li>
+        <li>Газ: какие токены нужны и где их брать</li>
+        <li>Что делать, если газа нет</li>
+        <li>Мосты: что это и какие реально работают</li>
+        <li>Список проверенных мостов</li>
+        <li>Практика: перевод без ошибок</li>
+      </ul>
+      <p><strong>Результат:</strong> свободно работаешь с разными сетями и переводами.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 7. Лендинги и кредитование</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Что такое лендинг и зачем он нужен</li>
+        <li>Как работает кредитование под залог</li>
+        <li>LTV и Health Factor простыми словами</li>
+        <li>Как начисляются проценты</li>
+        <li>Что такое ликвидация и как её избежать</li>
+        <li>Лупинг на лендинге: где применять и как контролировать риски</li>
+        <li>ТОП‑лендинги, которыми я пользуюсь</li>
+        <li>Какие лучше обходить</li>
+      </ul>
+      <p><strong>Результат:</strong> понимаешь, как давать и брать кредиты в крипте без риска ликвидации.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 8. DEX и пулы ликвидности</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Что такое DEX и как он работает</li>
+        <li>Как устроены пулы (V2, V3, V4)</li>
+        <li>Как анализировать пулы и выбирать выгодные</li>
+        <li>Impermanent loss: что это и как с ним работать</li>
+        <li>Как собирать комиссии и что с ними делать</li>
+        <li>Что делать, если пул вышел из диапазона</li>
+        <li>Ошибки новичков и как их избежать</li>
+        <li>Риски пулов и моя стратегия</li>
+      </ul>
+      <p><strong>Результат:</strong> умеешь зарабатывать на пулах ликвидности и контролировать риски.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 9. Работа с BTC в DeFi</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Разные версии биткоина в DeFi (wBTC, BTC.b и др.)</li>
+        <li>Как использовать BTC выгодно</li>
+        <li>BTC под залог: где это работает</li>
+        <li>Доходные стратегии с BTC через DEX</li>
+        <li>Риски работы с BTC в DeFi</li>
+        <li>Все способы заработка на биткоине</li>
+      </ul>
+      <p><strong>Результат:</strong> знаешь все варианты заработка на BTC в DeFi и как их использовать под себя.</p>
+    </div>
+
+    <div class="module-card">
+      <h3>Блок 10. Работа со стейблкоинами</h3>
+      <p><strong>Что узнаешь:</strong></p>
+      <ul>
+        <li>Виды стейблов и их отличия</li>
+        <li>Как оценить риски стейблов</li>
+        <li>Какие лучше не использовать</li>
+        <li>Как использовать стейблы в DeFi</li>
+        <li>Какую доходность реально ожидать</li>
+        <li>ТОП стратегий и протоколов</li>
+        <li>Как самому находить рабочие протоколы</li>
+      </ul>
+      <p><strong>Результат:</strong> умеешь зарабатывать на стейблах и строить стабильный доход.</p>
+    </div>
+  </div>
+</section>
+<section id="goals">
+  <h2>Какие цели будут закрыты</h2>
+  <ul>
+    <li>Безопасность: защищаешь свои средства от хакеров и мошенников</li>
+    <li>Самостоятельность: сам управляешь DeFi‑активами и принимаешь решения</li>
+    <li>Пассивный доход: запускаешь свои первые источники дохода</li>
+    <li>Портфель: создаёшь стратегию распределения капитала</li>
+    <li>Скорость: экономишь месяцы проб и ошибок</li>
+    <li>Уверенность: понимаешь рынок и не зависишь от чужих сигналов</li>
+  </ul>
+</section>
+<section class="cta-section" id="cta">
+  <h2>Готовы начать?</h2>
+  <p>Свяжитесь со мной, чтобы забронировать место и начать обучение уже сегодня.</p>
+  <a href="mailto:info@example.com">Написать сейчас</a>
+</section>
+<footer>
+  <p>© 2025 Artur Kmitas. Все права защищены.</p>
+</footer>
+</body>
+</html>
